@@ -206,6 +206,16 @@ main {
     padding: 5%;
     color: #3a3a3a;
 }
+
+/*Media Query tablets and larger (576px and up)*/
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
+
 /*Media Query tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
     /*Header*/
@@ -261,6 +271,11 @@ main {
 #benefits-mental > div {
     text-align: end;
     align-self: flex-end;
+
+    /*Gallery*/
+    #photos {
+        column-count: 3;
+    }
 }
 
 /*Large Devices*/
@@ -269,6 +284,11 @@ main {
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
     }
+
+     /* Galler */
+     #photos {
+        column-count: 4;
+     }
 }
 
 @media screen and (min-width: 1200px) {    
